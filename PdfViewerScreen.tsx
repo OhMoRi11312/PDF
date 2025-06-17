@@ -8,7 +8,7 @@ import * as FileSystem from 'expo-file-system';
 
 const PdfViewerScreen: React.FC = () => {
   const [pdfUri, setPdfUri] = useState<string | null>(null);
-  // **핵심 수정: webViewHtml에 PDF.js 렌더링 스크립트 포함**
+  
   const [webViewHtml] = useState<string>(() => {
     return `
       <html>
